@@ -1,39 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title id=title>Hideo Kojima - Tribute page</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E-readItShop</title>
 	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<main id="main">
-		<div class="background1"></div>
-		<h1> Hideo Kojima Bio Page</h1>
-		<div id="img-div"><img id="image" src="https://www.pdvg.it/wp-content/uploads/2020/01/death-stranding-hideo-kojima-paragona-kolossal-sci-fi-banana-v3-398197-1280x720-1.jpg" alt="Hideo Kojima acting very sus over there"><figcaption id="img-caption">Hideo Kojima acting very sus</figcaption></div>
-		<p class="biography">Biography :</p>
-		<h3 id="tribute-info">Hideo Kojima is a Japanese video game designer, director, producer, and writer. He is regarded as an auteur of video games. He developed a strong passion for action/adventure cinema and literature during his childhood and adolescence.</h3><br>
-		<img id="signature" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Hideo_Kojima_Signature.svg/1280px-Hideo_Kojima_Signature.svg.png">
-		<div class="alltext">
-			<a target="_blank" id="tribute-link" href="https://en.wikipedia.org/wiki/Hideo_Kojima">Hideo Kojima Wikipedia</a>
-			<p>Games that developed by Hideo Kojima :</p>
+	<header id="header">
+		<nav id="nav-bar">
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fa fa-bars"></i>
+			</label>
+			<img src="https://cdn-icons-png.flaticon.com/512/85/85618.png" alt="e-reader" id="header-img">
+			<label class="logo">E-readItShop</label> 
 			<ul>
-				<li>Metal Gear</li>
-				<li>Metal Gear 2: Solid Snake</li>
-				<li>Metal Gear Solid</li>
-				<li>Metal Gear Solid 2: Sons of Liberty</li>
-				<li>Metal Gear Solid: The Twin Snakes</li>
-				<li>Metal Gear Solid 3: Snake Eater</li>
-				<li>Metal Gear Solid 4: Guns of the Patriots</li>
-				<li>Metal Gear Online</li>
-				<li>Metal Gear Solid: Peace Walker</li>
-				<li>Metal Gear Rising: Revengeance</li>
-				<li>Metal Gear Solid V: Ground Zeroes</li>
-				<li>P.T.</li>
-				<li>Metal Gear Solid V: The Phantom Pain</li>
-				<li>Death Stranding</li>
+				<li><a href="#header" class="nav-link active">Home</a></li>
+				<li><a href="#form" class="nav-link">Products</a></li>
+				<li><a href="#form" class="nav-link">Features</a></li>
+				<li><a href="#email" class="nav-link">Pricing</a></li>
+				<li><a href="#footer" class="nav-link">Contact</a></li>
 			</ul>
+		</nav>
+	</header>
+	<div class="container"></div>
+	<section id="hero">
+		<h2 class="slogan1">Always recieve latest product news from us!</h2>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<input class="email" type="email" id="email" name="email" placeholder="Please enter your email" required style="z-index: 1000 !important;">
+			<input type="submit" id="submit" class="submit">
+		</form>
+	</section>
+	<div class="gallery">
+		<div class="content">
+			<h3>Kobo Nia</h3>
+			<img src="https://cdn.shopify.com/s/files/1/0834/0561/products/Luna_ThreeQuarter_Shadow_EN_700x700.jpg?v=1594389694" alt="Kobo Nia" class="productimage">
+			<p>Low range</p>
+			<h6>100$</h6>
+			<ul class="ulstars">
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star"></i></li>
+				<li class="liststars"><i class="fa fa-star"></i></li>
+				<li class="liststars"><i class="fa fa-star"></i></li>
+			</ul>
+			<button class="buy-1">Buy Now</button>
 		</div>
-	</main>
+		<div class="content">
+			<h3>Kobo Libra 2</h3>
+			<img src="https://cdn.shopify.com/s/files/1/0834/0561/products/IO_Angle_Black_EN_700x700.jpg?v=1633048881" alt="Kobo Libra 2" class="productimage">
+			<p>Mid range</p>
+			<h6>170$</h6>
+			<ul class="ulstars">
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star"></i></li>
+			</ul>
+			<button class="buy-2">Buy Now</button>
+		</div>
+		<div class="content">
+			<h3>Kindle Oasis</h3>
+			<img src="https://m.media-amazon.com/images/I/41zelMVQduL.jpg" alt="Kindle oasis" class="productimage">
+			<p>High range</p>
+			<h6>250$</h6>
+			<ul class="ulstars">
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+				<li class="liststars"><i class="fa fa-star checked"></i></li>
+			</ul>
+			<button class="buy-3">Buy Now</button>
+		</div>
+	</div>
+	<div class="">
+		          <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube.com/watch?v=7gZ3zW2mwh0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+		<video src="https://www.youtube.com/watch?v=7gZ3zW2mwh0" id="video"></video>
+	</div>
+	<div></div>
+	<footer id="footer">
+	</footer>
 </body>
 </html>
